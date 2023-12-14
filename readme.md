@@ -49,19 +49,19 @@ Enter your custom values and authentication method in user_input.tfvars.
 
 Execute the following commands in this project folder:
 
-```tf
+```sh
 terraform init
 ```
 
 Note: if you have already manually created your S3 bucket, you will need to import it in terraform:
 
-```tf
+```sh
 terraform import 'aws_s3_bucket.website_subdomain' name-of-your-subdomain-bucket # (ex: www.mysuperwebsite.com)
 ```
 
 Then:
 
-```tf
+```sh
 terraform apply --var-file=user_input.tfvars
 ```
 
