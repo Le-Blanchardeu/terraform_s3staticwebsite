@@ -56,7 +56,7 @@ terraform init
 Note: if you have already manually created your S3 bucket, you will need to import it in terraform:
 
 ```sh
-terraform import 'aws_s3_bucket.website_subdomain' name-of-your-subdomain-bucket # (ex: www.mysuperwebsite.com)
+terraform import 'aws_s3_bucket.website_subdomain' name-of-your-bucket # (ex: mysuperwebsite.com)
 ```
 
 Then:

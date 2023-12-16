@@ -1,6 +1,6 @@
 # WWW subdomain
 resource "aws_s3_bucket" "website_subdomain" {
-  bucket = "www.${var.bucket_name}"
+  bucket = var.bucket_name
 }
 
 resource "aws_s3_bucket_website_configuration" "website_subdomain" {
